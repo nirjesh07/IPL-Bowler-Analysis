@@ -21,4 +21,6 @@ An end-to-end data engineering pipeline using **Python, Pandas, and SQLite** to 
 ```bash
    git clone https://github.com/nirjesh07/ipl-performance-pipeline.git
 ```
-2. ​Install: pip install pandas matplotlib                                                                                                          3. ​Run: Execute the Jupyter notebook to spin up the DB and generate charts.
+2. ​Install: pip install pandas matplotlib
+
+3. ​Run: Execute the Jupyter notebook to spin up the DB and generate charts.
