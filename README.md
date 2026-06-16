@@ -1,18 +1,24 @@
 # IPL T20 Performance Analytics Pipeline
 
-An end-to-end data engineering and analytics pipeline built using **Python, Pandas, and SQLite** to analyze multi-GB ball-by-ball IPL cricket datasets. The project specifically focuses on identifying and ranking the top 10 most efficient death-overs (Overs 16-20) specialist bowlers.
+An end-to-end data engineering pipeline using **Python, Pandas, and SQLite** to analyze multi-GB IPL datasets and rank the top 10 death-overs (Overs 16-20) bowlers.
 
-## 🚀 Key Features & Pipeline Workflow
-* **Data Cleaning & Preprocessing:** Leveraged **Pandas** to clean, format dates, and handle missing values within the extensive ball-by-ball delivery and match-level tracking data.
-* **In-Memory Database Layer:** Built a temporary, high-performance database infrastructure using Python's inbuilt **`sqlite3`** library to execute complex analytical SQL queries.
-* **Consistency Threshold Filter:** Implemented strict query optimization filters (`HAVING total_balls >= 120`) to filter out anomalies and ensure only highly consistent death-overs bowlers are evaluated.
-* **Dual-Metric Visualizations:** Programmatically generated insights using **Matplotlib/Pandas** to plot and contrast performance across two key data dimensions:
-  1. Lowest Economy Rates in Death Overs
-  2. Highest Dot-Ball Percentages (Utility & Pressure Optimization)
+## 🚀 Key Features
+* **Data Cleaning:** Pandas used for data formatting and handling missing values.
+* **Database Layer:** Built an in-memory infrastructure using **`sqlite3`** for SQL queries.
+* **Filter:** Applied `HAVING total_balls >= 120` to eliminate outliers.
+* **Charts:** Programmatically generated visualizations using **Matplotlib**.
 
 ## 🛠️ Tech Stack
-* **Language:** Python
-* **Libraries:** Pandas, Matplotlib, sqlite3
-* **Database Language:** SQL (SQLite)
-* **Environment:** VS Code / Jupyter Notebook
-*
+* Python, Pandas, Matplotlib, SQL (SQLite), VS Code
+
+## 📊 Key Insights
+* **Death-Overs (16-20):** Most volatile phase where standard metrics fail.
+* **Threshold (>= 120 Balls):** Ensures only seasoned death specialists are evaluated.
+* **Dual-Metric:** Combined low Economy with high Dot-Ball % to measure real pressure.
+
+## 🏃‍♂️ How to Run
+1. **Clone:**
+```bash
+   git clone https://github.com/nirjesh07/ipl-performance-pipeline.git
+'''
+2. ​Install: pip install pandas matplotlib                                                                                                          3. ​Run: Execute the Jupyter notebook to spin up the DB and generate charts.
